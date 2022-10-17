@@ -6,6 +6,10 @@
   margin: 0 0 80px;
 }
 
+.place:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 1024px) {
   .place {
     grid-template-columns: minmax(min-content, 440px) minmax(min-content, 456px);

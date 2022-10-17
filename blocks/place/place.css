@@ -1,0 +1,32 @@
+.place {
+  max-width: 984px;
+  display: grid;
+  grid-template-columns: minmax(min-content, 460px) minmax(min-content, 484px);
+  gap: 48px 40px;
+  margin: 0 0 80px;
+}
+
+@media (max-width: 1024px) {
+  .place {
+    grid-template-columns: minmax(min-content, 440px) minmax(min-content, 456px);
+    margin: 0 0 80px;
+    gap: 48px 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .place {
+    grid-template-columns: minmax(min-content, 340px) minmax(min-content, 352px);
+    margin: 0 0 73px;
+    gap: 48px 28px;
+  }
+}
+
+/* Адаптив под 320px, злял именно 631px, чтобы переход в одну колонну происходил одновременно с photo__grid */
+@media (max-width: 631px) {
+  .place {
+    grid-template-columns: minmax(min-content, max-content);
+    margin: 0 0 50px;
+    gap: 32px;
+  }
+}

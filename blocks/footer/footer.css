@@ -1,0 +1,24 @@
+.footer {
+  max-width: 1184px;
+  margin: 0 auto 24px;
+  width: calc(100% - (48px*2));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin: 0 auto;
+    width: calc(100% - (24px*2));
+  }
+}
+
+/* Решил поставить медиазапрос на 509px для более презентабельного вида, именно на данном значении элементы из списка начинают переноситься на следующую строчку*/
+@media (max-width: 509px) {
+  .footer {
+  flex-direction: column;
+  margin: 0 auto 24px 16px;
+  align-items: flex-start;
+  }
+}

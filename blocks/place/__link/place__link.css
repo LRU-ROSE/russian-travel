@@ -1,0 +1,20 @@
+.place__link {
+  margin: 0;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: solid underline #fff 1px;
+  text-underline-offset: 4px;
+  transition: 0.3s linear;
+}
+.place__link:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 320px) {
+  .place__link {
+    margin: 0 16px;
+  }
+}
